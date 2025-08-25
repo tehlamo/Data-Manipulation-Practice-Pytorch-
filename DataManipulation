@@ -1,0 +1,57 @@
+import torch
+
+# x = torch.arange(12, dtype = torch.float32)
+# print(x)
+
+#x.numel()
+# print(x.numel())
+
+#x.shape
+# print(x.shape)
+
+# x = x.reshape(3, 4)
+# print(x)
+
+#y = torch.zeros((2, 3, 4))
+# print(y)
+
+#y = torch.ones((2, 3, 4))
+# print(y)
+
+#z = torch.randn(3, 4)
+# print(z)
+
+#z = torch.tensor([[2, 1, 4, 3], [1, 2, 3, 4], [4, 3, 2, 1]])
+# print(z)
+
+# y = x[-1], x[1:3]
+# print(y)
+
+# x[1, 2] = 17
+# y = x
+# print(y)
+
+# x[:2, :] = 12
+# y = x
+# print(y)
+
+# y = torch.exp(x)
+# print(y)
+
+# x = torch.tensor([1.0, 2, 4, 8])
+# y = torch.tensor([2, 2, 2, 2])
+# a = x + y
+# b = x - y
+# c = x * y
+# d = x / y
+# e = x ** y
+# print(a, b, c, d, e)
+
+X = torch.arange(12, dtype=torch.float32).reshape((3, 4))
+Y = torch.tensor([[2.0, 1, 4, 3], [1, 2, 3, 4], [4, 3, 2, 1]])
+# A = torch.cat((X, Y), dim=0)
+# B = torch.cat((X, Y), dim=1)
+# print(A, B)
+
+print(X == Y)
+print(X.sum())
